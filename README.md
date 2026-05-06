@@ -1,6 +1,6 @@
 # Arduino-Programmable-LED-Strip
 Arduino Programmable LED Strip
-Uses a 74HC595 Shift Register IC to allow for easy LED configuration, and efficient use of Digital I/O pins. LEDs are controlled by manipulating an 8-bit binary value to achieve a large amount of patterns and animations.
+Uses a 74HC595 Shift Register IC to allow for easy LED configuration, and efficient use of Digital I/O pins. LEDs are controlled by manipulating an 8-bit binary value to achieve a large number of patterns and animations.
 
 Implemented a buffer on button presses to avoid skipping over settings unintentionally. The function works by taking note of the last button press and checking whether 1.5 seconds have passed since the last press. While the button is blocked, the green LED indicator is set to HIGH and when the button becomes available the green LED turns OFF.
 
@@ -24,11 +24,11 @@ Q7' is not required for this circuit.
 
 **Note: Used pins are easily changeable. Simply change the values of integers "DS","SH_CP", and "ST_CP" in the ".ino" file.
 
-Required Material:
+Required Materials:
   - Arduino Uno
   - Breadboard
   - 74HC595 Shift Register IC
   - Jumper wires
-  - tactile button
+  - Tactile button
   - 9 resistors (220 or 330)ohm recommended
   - 9 LEDs (one of them is used to indicate readiness of button)
